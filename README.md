@@ -3,10 +3,10 @@ Copyright (C) 2023 Jing Wang
 
 Four experiments were conducted to compare GRC with LRC, CRC, and SRC on four benchmark face databases, including the AR, FEI, FERET, and UMIST face databases. 
 
-**Experiment 1:** Tune the parameters $s$ and $p$ for GRC when principal components that explain 98% of total variance are extracted.
-**Experiment 2:** Compare GRC with LRC, CRC, and SRC when principal components with different percentages (90%, 95%, 98%) of explained variance are extracted. 
-**Experiment 3:** Tune the parameters $s$ and $p$ for GRC when different number of principal components (54, 120, 200, 300) are extracted.
-**Experiment 4:** Compare GRC with LRC, CRC, and SRC when different number of principal components (10:10:300) are extracted.
+**Experiment 1:** Tune the parameters $s$ and $p$ for GRC when principal components that explain 98% of total variance are extracted.  
+**Experiment 2:** Compare GRC with LRC, CRC, and SRC when principal components with different percentages (90%, 95%, 98%) of explained variance are extracted.   
+**Experiment 3:** Tune the parameters $s$ and $p$ for GRC when different number of principal components (54, 120, 200, 300) are extracted.  
+**Experiment 4:** Compare GRC with LRC, CRC, and SRC when different number of principal components (10:10:300) are extracted.  
 
 # Usage
 1. Run **load_data.m** to split the face databases into training and testing sets.
