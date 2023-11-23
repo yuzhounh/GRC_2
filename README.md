@@ -21,8 +21,7 @@ Four experiments were conducted to compare GRC with LRC, CRC, and SRC on four be
    6) **exp_3_analysis.m**
    7) **exp_4_classify.m**
    8) **exp_4_analysis.m**
-3. More benchmark face databases are refered to:  
-https://github.com/yuzhounh/Face_databases
+3. More benchmark face databases are refered to: https://github.com/yuzhounh/Face_databases.  
 
 # Contact information
 Jing Wang  
