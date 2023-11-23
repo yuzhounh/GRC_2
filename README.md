@@ -10,6 +10,8 @@ Copyright (C) 2023 Jing Wang
    4) exp_2_analysis.m
    5) exp_3_classify.m
    6) exp_3_analysis.m
+   7) exp_4_classify.m
+   8) exp_4_analysis.m
 
 # Contact information: 
 Jing Wang  
