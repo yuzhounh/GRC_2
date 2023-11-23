@@ -2,7 +2,7 @@
 Copyright (C) 2023 Jing Wang
 
 The GRC optimization problem
-$$\mathop{\min}_{\alpha}||y-X\alpha||_s^s+\lambda||\alpha||_p^p$$
+$$\mathop{\min}_{\alpha}||y-X\alpha||_s^s+\lambda||\alpha||_p^p$$.
 
 Four experiments were conducted to compare GRC with LRC, CRC, and SRC on four benchmark face databases including the AR, FEI, FERET, and UMIST face databases.   
 **Experiment 1:** Tune the parameters $s$ and $p$ for GRC when principal components that explain 98% of total variance are extracted.  
@@ -21,6 +21,8 @@ Four experiments were conducted to compare GRC with LRC, CRC, and SRC on four be
    6) **exp_3_analysis.m**
    7) **exp_4_classify.m**
    8) **exp_4_analysis.m**
+3. More benchmark face databases are refered to:  
+https://github.com/yuzhounh/Face_databases
 
 # Contact information
 Jing Wang  
