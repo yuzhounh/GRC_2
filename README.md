@@ -12,6 +12,6 @@ Copyright (C) 2023 Jing Wang
    6) exp_3_analysis.m
 
 # Contact information: 
-Jing Wang 
-wangjing0@xynu.edu.cn 
-2015-3-22 11:07:44
+Jing Wang  
+wangjing0@xynu.edu.cn  
+2023-11-23 10:19:28  
