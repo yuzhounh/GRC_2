@@ -3,7 +3,6 @@
 clear,clc,close all;
 
 sDataset={'AR','FEI','FERET','UMIST'}';
-% sDataset={'AR','FEI'}';
 sR=1:10;
 sS=0.1:0.1:2.0;
 sP=0.1:0.1:2.0;
@@ -33,7 +32,7 @@ for iDataset=1:nDataset
                     load(file);
                     acc(iP,iS,iR,iDataset)=accuracy;
                 catch
-                    fprintf('exp_1/accuracy/%s/r%d_PEV%d_s%d_p%d.mat\n',cDataset,cR,round(PEV*100),round(cS*10),round(cP*10));
+                    fprintf('%s\n',file);
                     count=count+1;
                     paras{count,1}={cDataset,iR,iS,iP};
                 end

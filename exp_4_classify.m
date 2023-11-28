@@ -43,7 +43,7 @@ parfor i=1:n
     cAlgo=para{1,2};
     cR=para{1,3};
     cDim=para{1,4};
-    classifier_2(cDataset,cAlgo,cR,cDim);
+    classifier_3(cDataset,cAlgo,cR,cDim);
 end
 
 % move the results to a new folder

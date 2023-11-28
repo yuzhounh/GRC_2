@@ -16,7 +16,7 @@ for iDataset=1:nDataset
     mkdir(sprintf('data/%s',cDataset));
 
     % load data
-    load(sprintf('faces/%s.mat',cDataset));
+    load(sprintf('face/%s.mat',cDataset));
     [height,width,nPics]=size(x);
 
     x=reshape(x,[height*width,nPics]);

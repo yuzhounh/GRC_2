@@ -30,11 +30,12 @@ for iDataset=1:nDataset
                 cS=sS(iS);
                 for iP=1:nP
                     cP=sP(iP);
-                    file=sprintf('accuracy/%s/r%d_dim%d_s%d_p%d.mat',cDataset,cR,cDim,round(cS*10),round(cP*10));
+                    file=sprintf('exp_3/accuracy/%s/r%d_dim%d_s%d_p%d.mat',cDataset,cR,cDim,round(cS*10),round(cP*10));
                     try
                         load(file);
                         acc(iP,iS,iDim,iR,iDataset)=accuracy;
                     catch
+                        fprintf('%s\n',file);
                         count=count+1;
                         paras{count,1}={cDataset,cR,cDim,cS,cP};
                     end

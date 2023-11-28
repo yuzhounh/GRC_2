@@ -12,7 +12,7 @@ nAlgo=length(sAlgo);
 nR=length(sR);
 nPEV=length(sPEV);
 
-temp=zeros(nPEV,nAlgo,nDataset,nR);
+acc=zeros(nPEV,nAlgo,nDataset,nR);
 for iDataset=1:nDataset
     cDataset=sDataset{iDataset,1};
     for iAlgo=1:nAlgo
@@ -21,11 +21,12 @@ for iDataset=1:nDataset
             cR=sR(iR);
             for iPEV=1:nPEV
                 cPEV=sPEV(iPEV);
-                load(sprintf('exp_2/accuracy/%s/%s_r%d_PEV%d.mat',cDataset,cAlgo,cR,round(cPEV*100)),'accuracy');
-                temp(iPEV,iAlgo,iDataset,iR)=accuracy;
+                file=sprintf('exp_2/accuracy/%s/%s_r%d_PEV%d.mat',cDataset,cAlgo,cR,round(cPEV*100));
+                load(file);
+                acc(iPEV,iAlgo,iDataset,iR)=accuracy;
             end
         end
     end
 end
-temp=mean(temp,4);
-tmp=[temp(:,:,1);temp(:,:,2);temp(:,:,3);temp(:,:,4)];
+acc=mean(acc,4);
+table_3=[acc(:,:,1);acc(:,:,2);acc(:,:,3);acc(:,:,4)];
