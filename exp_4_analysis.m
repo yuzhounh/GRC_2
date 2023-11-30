@@ -28,4 +28,5 @@ for iDataset=1:nDataset
     end
 end
 temp=mean(temp,4);
-tmp=[temp(:,:,1);temp(:,:,2)];
+table_4=temp(:,:,1);
+table_5=temp(:,:,2);
